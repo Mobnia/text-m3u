@@ -5,7 +5,7 @@ const paths = media.toString().trim().split("\n");
 const playList = [];
 playList.push("#EXTM3U");
 paths.map(file => {
-  const songName = "#EXTINF:0, " + path.parse(file).ext + " - "+ path.parse(file).name;
+  const songName = "#EXTINF:0, - "+ path.parse(file).name;
   playList.push(songName);
   playList.push(file);
 });
